@@ -63,7 +63,7 @@ class RasparDados:
 
     def _anuncio_individual(self, lista_anuncios):
         for anuncio in lista_anuncios:
-            sleep(1.5)
+            sleep(3)
             self.navegador.get(f'https://erp.tiny.com.br/anuncios?idEcommerce={self.id_ecommerce}#edit/{anuncio}')
             esperar(self.navegador, elemento='//*[@id="section-dados-imagens"]')
             sleep(5)
